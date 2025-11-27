@@ -5,21 +5,21 @@
 class Tunacheck < Formula
   desc "CLI to check web and TLS security properties"
   homepage "https://github.com/JoystiC/tunacheck"
-  version "1.1.0"
+  version "1.1.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/JoystiC/tunacheck/releases/download/v1.1.0/tunacheck_darwin_amd64.tar.gz"
-      sha256 "2e258417a30a27b8c975bc58cc5d7a89df1f7e2712081d8fbaaab46373906238"
+      url "https://github.com/JoystiC/tunacheck/releases/download/v1.1.1/tunacheck_darwin_amd64.tar.gz"
+      sha256 "283fd92f485b77e7b01d737b7831c4897eec71d9b58ce16beea19ccb487e097a"
 
       def install
         bin.install "tunacheck"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/JoystiC/tunacheck/releases/download/v1.1.0/tunacheck_darwin_arm64.tar.gz"
-      sha256 "846cffefabd1674aad5f7f0f2c74dd0e927c993ca5f4ce80838bb0a343e07dc5"
+      url "https://github.com/JoystiC/tunacheck/releases/download/v1.1.1/tunacheck_darwin_arm64.tar.gz"
+      sha256 "386aedc3be4400a6d5b6f4867c8f63c0aafa9f5dc4612a3f1ec787199a6f09b9"
 
       def install
         bin.install "tunacheck"
@@ -29,15 +29,15 @@ class Tunacheck < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JoystiC/tunacheck/releases/download/v1.1.0/tunacheck_linux_amd64.tar.gz"
-      sha256 "8ea91969c56eaa6e73fb1bc1bc59ed302ad6e06b026b4124b12850058580740d"
+      url "https://github.com/JoystiC/tunacheck/releases/download/v1.1.1/tunacheck_linux_amd64.tar.gz"
+      sha256 "f23ee42c4ac034068702588578a02f1db7ce55172f4fb4d5edc3955d588036e8"
       def install
         bin.install "tunacheck"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JoystiC/tunacheck/releases/download/v1.1.0/tunacheck_linux_arm64.tar.gz"
-      sha256 "a09bfb41c29790c88ef116ba98eb60d9ac6437658eb79c3ca4b012f30e28454a"
+      url "https://github.com/JoystiC/tunacheck/releases/download/v1.1.1/tunacheck_linux_arm64.tar.gz"
+      sha256 "451825fb4c72a6244789f6b370114404098d4302bdfbf0f71aa768e925039a28"
       def install
         bin.install "tunacheck"
       end
